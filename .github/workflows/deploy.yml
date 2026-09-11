@@ -39,6 +39,9 @@ jobs:
 
       - name: Build TEZAFLIX
         working-directory: app
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
         run: npm run build -- --base=/TEZAFLIX/
 
       - name: Configure GitHub Pages

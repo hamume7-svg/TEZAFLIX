@@ -27,11 +27,11 @@ jobs:
         with:
           node-version: 22
 
-      - name: Extract TEZAFLIX V4
+      - name: Extract TEZAFLIX V6_READY
         run: |
           rm -rf app
           mkdir app
-          unzip -q TEZAFLIX_V4.zip -d app
+          unzip -q TEZAFLIX_V6_READY.zip -d app
 
       - name: Install dependencies
         working-directory: app

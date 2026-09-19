@@ -31,7 +31,7 @@ jobs:
         run: |
           rm -rf app
           mkdir app
-          unzip -q TEZAFLIX_V8_YOUTUBE_READY.zip -d app
+          unzip -q TEZAFLIX_V8_YOUTUBE_FIX.zip -d app
 
       - name: Install dependencies
         working-directory: app
